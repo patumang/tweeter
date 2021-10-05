@@ -1,0 +1,24 @@
+.new-tweet form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#tweet-text {
+  border: 0;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+button[type=submit] {
+  font-family: 'Bungee', cursive;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.counter {
+  float: right;
+}
