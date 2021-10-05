@@ -12,13 +12,20 @@
   border-bottom: 1px solid black;
 }
 
-button[type=submit] {
+.counter, button[type=submit] {
   font-family: 'Bungee', cursive;
+  font-size: 16px;
+}
+
+button[type=submit] {
   background-color: #4056A1;
   color: #FFFFFF;
-  font-size: 16px;
 }
 
 .counter {
   float: right;
+}
+
+.text-danger {
+  color: red;
 }
