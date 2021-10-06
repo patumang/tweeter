@@ -1,5 +1,9 @@
 .header {
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 400px;
   width: 100%;
   background-color: #f5c400;
@@ -7,22 +11,22 @@
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-.header-avatar {
+/* .header-avatar {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 .header-avatar img {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
-.header-name {
+/* .header-name {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, calc(-50% + 100px));
-}
+} */
 .header-name h2 {
   display: inline-block;
   margin: 0;
