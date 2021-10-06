@@ -2,7 +2,6 @@
   position: relative;
   height: 400px;
   width: 100%;
-  z-index: -1;
   background-color: #f5c400;
   background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
