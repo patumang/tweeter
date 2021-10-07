@@ -15,6 +15,12 @@ $(() => {
   `;
   $sectionNewTweet.prepend($errorContainer);
   $('.error-container').hide();
+  $('.new-tweet').hide();
+
+  $('.link-new-tweet').click(() => {
+    $('.new-tweet').slideDown("slow");
+    $("#tweet-text").focus();
+  });
 
   // making a get request to see some data
   const loadTweets = () => {
@@ -88,18 +94,21 @@ $(() => {
     const tweetText = $("#tweet-text").val();
 
     if (!tweetText) {
-      $('.error-container').slideUp();
-      $('.error-message').text('tweet content is not present! please input tweet content.');
+      $('.error-container').slideUp("slow", () => {
+        $('.error-message').text('tweet content is not present! please input tweet content.');
+      });
       $('.error-container').slideDown("slow");
     } else if (tweetText.length > 140) {
-      $('.error-container').slideUp();
-      $('.error-message').text('tweet content is too long! please input 140 or less letters.');
+      $('.error-container').slideUp("slow", () => {
+        $('.error-message').text('tweet content is too long! please input 140 or less letters.');
+      });
       $('.error-container').slideDown("slow");
     } else {
       $('.error-container').slideUp();
       const serializedData = $(this).serialize();
       $.post("/tweets", serializedData, () => {
         $("#tweet-text").val('');
+        $('.new-tweet').slideUp();
         loadTweets();
       });
     }

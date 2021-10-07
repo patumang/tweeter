@@ -1,3 +1,7 @@
+/* .new-tweet {
+  visibility: hidden;
+} */
+
 .new-tweet form {
   display: flex;
   flex-direction: column;
@@ -36,4 +40,8 @@ button[type=submit] {
   display: flex;
   gap: 5px;
   border: solid 5px red;
+}
+
+.link-new-tweet:hover {
+  cursor: pointer;
 }
