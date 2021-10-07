@@ -29,3 +29,11 @@ button[type=submit] {
 .text-danger {
   color: red;
 }
+
+.error-container {
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  border: solid 5px red;
+}

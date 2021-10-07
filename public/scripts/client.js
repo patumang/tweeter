@@ -5,6 +5,17 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(() => {
+  const $sectionNewTweet = $('.new-tweet');
+  const $errorContainer = `
+    <div class="error-container text-danger">
+      <i class="fas fa-exclamation-triangle"></i>
+      <span class="error-message"></span>
+      <i class="fas fa-exclamation-triangle"></i>
+    </div>
+  `;
+  $sectionNewTweet.prepend($errorContainer);
+  $('.error-container').hide();
+
   // making a get request to see some data
   const loadTweets = () => {
     $.ajax({
@@ -77,10 +88,15 @@ $(() => {
     const tweetText = $("#tweet-text").val();
 
     if (!tweetText) {
-      alert('tweet content is not present! please input tweet content.');
+      $('.error-container').slideUp();
+      $('.error-message').text('tweet content is not present! please input tweet content.');
+      $('.error-container').slideDown("slow");
     } else if (tweetText.length > 140) {
-      alert('tweet content is too long! please input 140 or less letters.');
+      $('.error-container').slideUp();
+      $('.error-message').text('tweet content is too long! please input 140 or less letters.');
+      $('.error-container').slideDown("slow");
     } else {
+      $('.error-container').slideUp();
       const serializedData = $(this).serialize();
       $.post("/tweets", serializedData, () => {
         $("#tweet-text").val('');
