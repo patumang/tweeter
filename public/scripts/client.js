@@ -82,7 +82,7 @@ $(() => {
       alert('tweet content is too long! please input 140 or less letters.');
     } else {
       const serializedData = $(this).serialize();
-      $.post("/tweets", serializedData, (response) => {
+      $.post("/tweets", serializedData, () => {
         $("#tweet-text").val('');
         loadTweets();
       });

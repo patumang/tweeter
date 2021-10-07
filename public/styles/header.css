@@ -8,25 +8,23 @@
   width: 100%;
   background-color: #f5c400;
   background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  padding-top: 50px;
 }
-
+.header-avatar { 
+  margin: 0;
+  padding: 0;
+}
 /* .header-avatar {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 } */
-.header-avatar img {
-  height: 200px;
-  width: 200px;
+.header-avatar {
+  height: 160px;
+  width: 160px;
 }
-/* .header-name {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, calc(-50% + 100px));
-} */
+
 .header-name h2 {
   display: inline-block;
   margin: 0;
