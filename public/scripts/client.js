@@ -5,6 +5,8 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(() => {
+  const charLimit = 140;
+  $('.counter').text(charLimit);
   const $sectionNewTweet = $('.new-tweet');
   const $errorContainer = `
     <div class="error-container text-danger">
@@ -18,8 +20,12 @@ $(() => {
   $('.new-tweet').hide();
 
   $('.link-new-tweet').click(() => {
-    $('.new-tweet').slideDown("slow");
-    $("#tweet-text").focus();
+    if ($(".new-tweet").is(":hidden")) {
+      $('.new-tweet').slideDown("slow");
+      $("#tweet-text").focus();
+    } else {
+      $('.new-tweet').slideUp("slow");
+    }
   });
 
   // making a get request to see some data
@@ -109,6 +115,7 @@ $(() => {
       $.post("/tweets", serializedData, () => {
         $("#tweet-text").val('');
         $('.new-tweet').slideUp();
+        $('.counter').text(charLimit);
         loadTweets();
       });
     }
