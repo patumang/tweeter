@@ -73,15 +73,20 @@ $(() => {
   const $form = $("#new-tweet-form");
   $form.on("submit", function(event) {
     event.preventDefault();
-    console.log('form was submitted');
 
-    const serializedData = $(this).serialize();
+    const tweetText = $("#tweet-text").val();
 
-    console.log(serializedData);
-    $.post("/tweets", serializedData, (response) => {
-      console.log(response);
-      loadTweets();
-    });
+    if (!tweetText) {
+      alert('tweet content is not present! please input tweet content.');
+    } else if (tweetText.length > 140) {
+      alert('tweet content is too long! please input 140 or less letters.');
+    } else {
+      const serializedData = $(this).serialize();
+      $.post("/tweets", serializedData, (response) => {
+        $("#tweet-text").val('');
+        loadTweets();
+      });
+    }
   });
 
 });
