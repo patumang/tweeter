@@ -80,4 +80,18 @@ $(() => {
 
   renderTweets(data);
 
+  const $form = $("#new-tweet-form");
+  $form.on("submit", function(event) {
+    event.preventDefault();
+    console.log('form was submitted');
+
+    const serializedData = $(this).serialize();
+
+    console.log(serializedData);
+    $.post("/tweets/", serializedData, (response) => {
+      console.log(response);
+      //fetchBlogs();
+    });
+  });
+
 });
