@@ -13,22 +13,20 @@
 
     /* nav updated styels */
     nav {
-      background-color: transparent;
+      background-color: #f5c400;
+      background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
     }
 
     /* header updated styels */
     .header {
       width: 100%;
-      position: fixed;
-      top: 0;
-      z-index: 10;
+      padding-top: 55px;
     }
 
     /* main container updated styels */
     .container {
       width: 90%;
-      margin: 50px auto;
-      margin-top: 450px;
+      margin: 30px auto;
     }
 
   }
