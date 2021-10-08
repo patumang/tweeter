@@ -1,27 +1,17 @@
 .header {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 400px;
-  /* width: 100%; */
   background-color: #f5c400;
   background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
-  /* padding-top: 50px; */
-  margin-top: 50px;
   width: 30vw;
 }
 .header-avatar { 
   margin: 0;
   padding: 0;
 }
-/* .header-avatar {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-} */
 .header-avatar {
   height: 160px;
   width: 160px;
@@ -31,4 +21,5 @@
   display: inline-block;
   margin: 0;
   padding: 0;
+  margin-top: 10px;
 }

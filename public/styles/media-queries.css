@@ -1,0 +1,27 @@
+/* Another tablet breakpoint is maximum width of 1024px */
+  @media only screen and (max-width: 1024px) {
+    /* Write CSS rules that target Tablets screen sizes downwards - including smartphones */
+    body {
+      flex-direction: column;
+      margin: 0;
+      justify-content: flex-start;
+      align-items: stretch;
+      width: 100%;
+      padding: 0;
+    }
+    nav {
+      background-color: transparent
+    }
+    .header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 10;
+    }
+    .container {
+      width: 90%;
+      margin: 50px auto;
+      margin-top: 450px;
+    }
+
+  }
