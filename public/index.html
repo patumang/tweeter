@@ -44,6 +44,7 @@
         </div>
       </div>
     </nav>
+    <!-- Tweeter Header with User Avatar and Name -->
     <header class="header">
       <img class="header-avatar" src="/images/profile-hex.png">
       <div class="header-name">
@@ -54,10 +55,11 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <!-- Section to post New tweet -->
       <section class="new-tweet">
         <form id="new-tweet-form">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text" rows="1"></textarea>
+          <!-- <label for="tweet-text">What are you humming about?</label> -->
+          <textarea name="text" id="tweet-text" rows="1" placeholder="What are you humming about?"></textarea>
           <div>
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text"></output>
@@ -65,6 +67,7 @@
         </form>
       </section>
       
+      <!-- Section to display all the tweets -->
       <section id="tweets-container">
       </section>
     </main>

@@ -13,7 +13,7 @@ html {
 /*
  * Global layout stuff
  */
-
+/* body styels to display header and tweets side by side */
 body {
   color: #545149;
   background-color: #f4f1ec;
@@ -30,6 +30,7 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+ /* main container styels */
  .container {
    width: 50vw;
  }

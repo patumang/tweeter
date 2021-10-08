@@ -1,39 +1,48 @@
+/* new tweet container styles */
 .new-tweet {
   margin-bottom: 40px;
+  font-size: 1rem;
 }
 
+/* new tweet form styles */
 .new-tweet form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+/* new tweet text area styles */
 #tweet-text {
   border: 0;
   background-color: transparent;
   resize: none;
   outline: none;
   border-bottom: 1px solid black;
+  font-weight: 600;
 }
 
+/* new tweet chars counter and button styles */
 .counter, button[type=submit] {
   font-family: 'Bungee', cursive;
-  font-size: 16px;
 }
 
+/* new tweet button styles */
 button[type=submit] {
   background-color: #4056A1;
   color: #FFFFFF;
 }
 
+/* new tweet char counter styles */
 .counter {
   float: right;
 }
 
+/* class to styles text color to red */
 .text-danger {
   color: red;
 }
 
+/* new tweet error container styles */
 .error-container {
   margin: 10px 0;
   padding: 10px;
@@ -41,7 +50,3 @@ button[type=submit] {
   gap: 5px;
   border: solid 5px red;
 }
-
-/* .link-new-tweet:hover {
-  cursor: pointer;
-} */

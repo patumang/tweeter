@@ -1,3 +1,4 @@
+/* header styels */
 .header {
   display: flex;
   flex-direction: column;
@@ -8,15 +9,16 @@
   background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
   width: 30vw;
 }
-.header-avatar { 
+
+/* header avatar styels */
+.header-avatar {
   margin: 0;
   padding: 0;
-}
-.header-avatar {
   height: 160px;
   width: 160px;
 }
 
+/* header name text styels */
 .header-name h2 {
   display: inline-block;
   margin: 0;

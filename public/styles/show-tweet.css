@@ -1,3 +1,4 @@
+/* tweet article styles  */
 .tweet {
   display: flex;
   flex-direction: column;
@@ -5,11 +6,15 @@
   padding: 10px;
   border: solid 2px black;
   color: #000000;
+  font-size: 1.2rem;
 }
+
+/* hover style on tweet article */
 .tweet:hover {
   box-shadow: 5px 5px #4056A150;
 }
 
+/* tweet article header style */
 .tweet header {
   display: flex;
   justify-content: space-between;
@@ -17,10 +22,12 @@
   padding-right: 10px;
 }
 
+/* tweet article body style */
 .article-body {
   padding: 5px 10px;
 }
 
+/* tweet article header user profile container style */
 .user-profile {
   display: flex;
   align-items: center;
@@ -28,27 +35,35 @@
   gap: 5px;
   color: #808080;
 }
+
+/* tweet article header user profile image style */
 .user-profile img {
   height: 50px;
 }
 
+/* style to display text in gray color */
 .text-muted {
   opacity: 0.5;
+  color: gray;
 }
 
+/* tweet article footer style */
 .tweet footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 15px;
+  font-size: 0.8rem;
   padding: 5px 10px;
   border-top: solid 2px black;
 }
 
+/* tweet article footer icons group container style */
 .respond-icons .fas {
   margin-left: 7px;
   color: #4056A1;
 }
+
+/* hover style on tweet article footer icons */
 .respond-icons .fas:hover {
   color: goldenrod;
 }
