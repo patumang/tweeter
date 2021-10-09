@@ -44,9 +44,9 @@ button[type=submit] {
 
 /* new tweet error container styles */
 .error-container {
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
   padding: 10px;
   display: flex;
   gap: 5px;
-  border: solid 5px red;
+  border: solid 2px red;
 }

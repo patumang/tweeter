@@ -19,11 +19,6 @@ body {
   background-color: #f4f1ec;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
-  padding-top: 170px;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
 }
 
 /*
@@ -32,5 +27,11 @@ body {
 
  /* main container styels */
  .container {
-   width: 50vw;
+   width: 90%;
+   margin: 10px auto;
+ }
+
+ /* body sections styels */
+ section {
+   margin-top: 40px;
  }

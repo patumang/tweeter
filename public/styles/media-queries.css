@@ -1,32 +1,32 @@
-/* Another tablet breakpoint is maximum width of 1024px */
-  @media only screen and (max-width: 1024px) {
+/* Deskktop breakpoint is minimum width of 1024px */
+  @media only screen and (min-width: 1024px) {
     /* Write CSS rules that target Tablets screen sizes downwards - including smartphones */
     /* change body element styles to display one after another */
     body {
-      flex-direction: column;
-      margin: 0;
-      justify-content: flex-start;
-      align-items: stretch;
-      width: 100%;
-      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 140px;
     }
 
     /* nav updated styels */
     nav {
-      background-color: #f5c400;
-      background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+      background-color: #4056A1;
+      background-image: none;
     }
 
     /* header updated styels */
     .header {
-      width: 100%;
-      padding-top: 55px;
+      padding-top: 0;
+      margin-top: 50px;
+      width: 30vw;
     }
 
     /* main container updated styels */
     .container {
-      width: 90%;
-      margin: 30px auto;
+      width: 50vw;
+      margin: 10px 0;
     }
 
   }
